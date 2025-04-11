@@ -1,7 +1,6 @@
 # nc (number counter)
 
-nc is a small program that counts the total amount of times a given number is 
-entered.
+nc is a small program that displays how many times a number was entered, and how many unique numbers were entered.
 
 ## Requirements
 
@@ -9,12 +8,14 @@ entered.
 
 ## Usage
 
-### Windows: 
+### Windows:
+ 
 ```
 python nc.py
 ```
 
-### Mac / Linux: 
+### Mac / Linux:
+ 
 ```
 chmod +x nc.py
 ./nc.py
@@ -25,27 +26,29 @@ chmod +x nc.py
 ```
 $ ./nc.py
 
-Enter numbers. To stop, enter an empty line.
--> 1
-[1]
--> .34
-[1, 0.34]
--> 4
-[1, 0.34, 4]
--> 1
-[1, 0.34, 4, 1]
--> 4
-[1, 0.34, 4, 1, 4]
--> 1
-[1, 0.34, 4, 1, 4, 1]
+Begin entries. To delete the last entry, enter 'del'. To stop, enter an empty line.
+-> 9
+[9]
+-> 30
+[9, 30]
+-> del
+[9]
+-> 300
+[9, 300]
+-> 400
+[9, 300, 400]
+-> 400
+[9, 300, 400, 400]
+-> 400.20 
+[9, 300, 400, 400, 400.2]
 -> 
 Done.
 
-Total numbers: 6
-Total unique numbers: 3
+Total numbers: 5
+Total unique numbers: 4
 
-0.34: 1
-1: 3
-4: 2
+9: 1
+300: 1
+400: 2
+400.2: 1
 ```
-
