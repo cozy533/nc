@@ -16,6 +16,7 @@ python nc.py
 
 ### Mac / Linux: 
 ```
+chmod +x nc.py
 ./nc.py
 ```
 
@@ -38,6 +39,7 @@ Enter numbers. To stop, enter an empty line.
 -> 1
 [1, 0.34, 4, 1, 4, 1]
 -> 
+Done.
 
 Total numbers: 6
 Total unique numbers: 3
