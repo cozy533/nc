@@ -14,9 +14,10 @@ while(True):
             num = float(num)
         except ValueError:
             if(num == ''):
+                print("Done.")
                 break
             else:
-                print(f"Invalid input '{num}'. Skipping.")
+                print(f"Skipping invalid input: '{num}'")
                 continue
 
     nums.append(num)
