@@ -3,7 +3,7 @@
 nums = []
 totals = {}
 
-print("\nEnter numbers. To stop, enter an empty line.")
+print("\nBegin entries. To delete the last entry, enter 'del'. To stop, enter an empty line.")
 
 while(True):
     num = input("-> ")
@@ -16,6 +16,14 @@ while(True):
             if(num == ''):
                 print("Done.")
                 break
+            elif(num == 'del'):
+                try:
+                    nums.pop()
+                except IndexError:
+                    print('No entries currently exist.')
+                    continue
+                print(nums)
+                continue
             else:
                 print(f"Skipping invalid input: '{num}'")
                 continue
